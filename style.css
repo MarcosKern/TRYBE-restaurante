@@ -3,51 +3,72 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-size: 16px;
-    display: flex;
     height: 100vh;
+    font-size: 1vw;
 }
 
-aside, main{
+main, main > section:first-of-type  {
     display: flex;
     flex-direction: column;
 }
 
-aside {
-    flex: 1;
+header, section, nav {
+    display: flex;
+}
+
+header, nav > a{
+    color: #ddd;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.37);
+    position: sticky;
+    top: 0;
+    padding: .6em;
+    justify-content: space-between;
     align-items: center;
-    background: #706099;
-    color: #dddddd;
-    position: relative;
-    
 }
 
-aside > header, aside > footer {
-    flex: 1;
-    width: 100%;
-
+nav {
+    width: 30vw;
+    justify-content: space-around;
+    align-items: center;
 }
 
-aside > nav {
-    flex: 2;
+nav > div {
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background: #ddd;
 }
 
-aside > span {
-    width: 90%;
-    height: 1px;
-    background: #dddddd;
+h1, nav > a, main > section:first-of-type > h2  {
+    text-decoration: none;
+    font: bold 1.4em 'Dancing Script', cursive;
 }
 
-main {
-    flex: 5;
-    background: #dddddd;
-}
-
-aside > header > h1 {
-    display: flex;
-    flex-direction: column;
-    padding: 2vw;
+h1 {
     font-size: 1.8em;
 }
+
+main > section:first-of-type {
+    margin: 10vh;
+    height: 80vh;
+}
+
+main > section:first-of-type > h2 {
+    font-size: 4em;
+}
+
+main > section:first-of-type > p {
+    font: 500 1.2em 'Open Sans', sans-serif;
+    text-align: justify;
+}
+
+
 
