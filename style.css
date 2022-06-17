@@ -1,309 +1,346 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    height: 100vh;
-    font-size: 1vw;
-    background: #271010;
+  height: 100vh;
+  font-size: 1vw;
+  background: #271010;
 }
 
 main,
-main>section:first-of-type,
-main>section:nth-of-type(2) {
-    display: flex;
-    flex-direction: column;
+main > section:first-of-type,
+main > section:nth-of-type(2),
+footer {
+  display: flex;
+  flex-direction: column;
 }
 
 header,
 section,
 nav,
-main>section:nth-of-type(3) {
-    display: flex;
+main > section:nth-of-type(3),
+main > section:nth-of-type(4) {
+  display: flex;
 }
 
 header,
-nav>a,
-main>section:first-of-type>a,
-main>section:first-of-type,
-main>section:nth-of-type(2)>a,
-main>section:last-of-type>a {
-    color: #ddd;
+nav > a,
+footer,
+main > section:first-of-type > a,
+main > section:first-of-type,
+main > section:nth-of-type(2) > a,
+main > section:last-of-type > a,
+footer > ul > li > a {
+  color: #ddd;
+}
+
+section + section {
+  margin-top: 20px;
 }
 
 a:hover {
-    filter: brightness(.8);
+  filter: brightness(0.8);
 }
 
 header {
-    background: rgba(0, 0, 0, 0.37);
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    padding: .6em;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    backdrop-filter: brightness(.6);
-    -webkit-backdrop-filter: brightness(.6);
+  background: rgba(0, 0, 0, 0.37);
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  padding: 0.6em;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  backdrop-filter: brightness(0.6);
+  -webkit-backdrop-filter: brightness(0.6);
 }
 
 nav {
-    width: 30vw;
-    justify-content: space-around;
-    align-items: center;
+  width: 30vw;
+  justify-content: space-around;
+  align-items: center;
 }
 
-nav>div {
-    height: 5px;
-    width: 5px;
-    border-radius: 100%;
-    background: #ddd;
+nav > div {
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  background: #ddd;
 }
 
 h1,
-nav>a,
-main>section:first-of-type>h2 {
-    text-decoration: none;
-    font: bold 1.4em 'Dancing Script', cursive;
+nav > a,
+main > section:first-of-type > h2 {
+  text-decoration: none;
+  font: bold 1.4em 'Dancing Script', cursive;
 }
 
 h1 {
-    font-size: 1.8em;
+  font-size: 1.8em;
 }
 
 /* --------------------- Historia --------------------- */
 
 section {
-    margin-inline: 10vh;
+  margin-inline: 10vh;
 }
 
-
-main>section:first-of-type {
-    margin-bottom: 12vh;
-    margin-top: 12vh;
-    height: 72vh;
-    width: 80%;
-    align-self: center;
-    position: relative;
+main > section:first-of-type {
+  margin-bottom: 12vh;
+  margin-top: 12vh;
+  height: 72vh;
+  width: 80%;
+  align-self: center;
+  position: relative;
 }
 
-main>section:first-of-type>div {
-
-    background: url('./images/brasa.jpg');
-    height: 100%;
-    width: 80%;
-    filter: brightness(.3);
-    position: absolute;
-    right: 0;
-    background-size: cover;
-    z-index: -1;
-    border-radius: 70px 0px 70px 0px;
+main > section:first-of-type > div {
+  background: url('./images/brasa.jpg');
+  height: 100%;
+  width: 80%;
+  filter: brightness(0.3);
+  position: absolute;
+  right: 0;
+  background-size: cover;
+  z-index: -1;
+  border-radius: 70px 0px 70px 0px;
 }
 
-main>section:first-of-type>h2 {
-    font-size: 4em;
+main > section:first-of-type > h2 {
+  font-size: 4em;
 }
 
-main>section:first-of-type>p {
-    font: 500 1.3em 'Open Sans', sans-serif;
-    text-align: justify;
-    padding-inline: 1.8em;
-    text-indent: .8em;
+main > section:first-of-type > p {
+  font: 500 1.3em 'Open Sans', sans-serif;
+  text-align: justify;
+  padding-inline: 1.8em;
+  text-indent: 0.8em;
 }
 
-main>section:first-of-type>p:first-of-type {
-    padding-top: 1.8em;
+main > section:first-of-type > p:first-of-type {
+  padding-top: 1.8em;
 }
 
-main>section:first-of-type>a {
-    align-self: center;
-    margin: 1em;
-    padding: .5em 2em .5em 2em;
-    font: 500 1.6em 'Open Sans', sans-serif;
-    background: #441010af;
-    text-decoration: none;
-    border-radius: 10px;
+main > section:first-of-type > a {
+  align-self: center;
+  margin: 1em;
+  padding: 0.5em 2em 0.5em 2em;
+  font: 500 1.6em 'Open Sans', sans-serif;
+  background: #441010af;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 /* ---------------------- Tour virtual pela cozinha / reservas ---------------------- */
 
-main>section:nth-of-type(2) {
-    background: url('./images/cozinha.jpg');
+main > section:nth-of-type(2) {
+  background: url('./images/cozinha.jpg');
 }
 
-main>section:last-of-type {
-    margin-top: 20px;
-
+main > section:last-of-type {
+  background: url('./images/salao.jpg');
 }
 
-main>section:nth-of-type(2),
-main>section:last-of-type {
-    width: 80%;
-    align-self: center;
-    background-size: cover;
-    background-position: center;
-    background-size: 100%;
-    position: relative;
-    transition: .8s ease-in-out;
+main > section:nth-of-type(2),
+main > section:last-of-type {
+  width: 80%;
+  align-self: center;
+  background-size: cover;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+  transition: 0.8s ease-in-out;
 }
 
-main>section:nth-of-type(2):hover,
-main>section:last-of-type:hover {
-    background-size: 120%;
-    transition: .8s ease-in-out;
+main > section:nth-of-type(2):hover,
+main > section:last-of-type:hover {
+  background-size: 120%;
+  transition: 0.8s ease-in-out;
 }
 
-main>section:nth-of-type(2)>a,
-main>section:last-of-type>a {
-    text-decoration: none;
-    font: 300 2em 'Roboto', sans-serif;
-    text-align: center;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    width: 100%;
-    background: #00000099;
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
-    filter: none;
-    transition: .8s linear;
+main > section:nth-of-type(2) > a,
+main > section:last-of-type > a {
+  text-decoration: none;
+  font: 300 2em 'Roboto', sans-serif;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  background: #00000099;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  filter: none;
+  transition: 0.8s linear;
 }
 
-main>section:nth-of-type(2)>a:hover,
-main>section:last-of-type>a:hover {
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+main > section:nth-of-type(2) > a:hover,
+main > section:last-of-type > a:hover {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 /* ---------------------- Especialidades da casa ---------------------- */
 
-main>section:nth-of-type(3) {
-    padding-top: 20px;
+main > section:nth-of-type(3),
+main > section:nth-of-type(4) {
     position: relative;
     height: 80vh;
     width: 80%;
     align-self: center;
-
     gap: 20px;
 }
 
-main>section:nth-of-type(3)>div:first-of-type {
+main > section:nth-of-type(3) > div:last-of-type > article,
+main > section:nth-of-type(3) > div:last-of-type,
+main > section:nth-of-type(3) > div:first-of-type > div > article  {
+    flex: 1;
+    background-position: center;
+}
+main > section:nth-of-type(3) > div:first-of-type {
     flex: 2;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-main>section:nth-of-type(3)>div:first-of-type>div {
-    flex: 3;
-    gap: 20px;
+main > section:nth-of-type(3) > div:first-of-type > div {
+  flex: 3;
+  gap: 20px;
+  display: flex;
+}
+
+main > section:nth-of-type(3) > div:first-of-type > div > article:first-of-type {
+  background: url('./images/carreDeCordeiro.jpg');
+  background-size: 100%;
+}
+
+main > section:nth-of-type(3) > div:first-of-type > div > article:nth-of-type(2) {
+  background: url('./images/carneAssada.jpg');
+  background-size: 100%;
+}
+
+main > section:nth-of-type(3) > div:first-of-type > div > article:last-of-type {
+  background: url('./images/saladaSendoTemperada.jpg');
+  background-size: 100%;
+}
+
+main > section:nth-of-type(3) > div:first-of-type > article {
+  flex: 2;
+  background: url('./images/freshSalad.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+main > section:nth-of-type(3) > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+}
+
+main > section:nth-of-type(3) > div:last-of-type > article {
+  background: url('./images/tigelaDeSalada.jpg');
+  background-size: 100%;
+}
+
+article > div {
+  height: 100%;
+  color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  transition: 0.3s ease-in-out;
+}
+
+article:hover > div {
+  color: #ddd;
+  backdrop-filter: brightness(0.3);
+  -webkit-backdrop-filter: brightness(0.3);
+}
+
+article div > h3 {
+  padding-top: 2em;
+  padding-inline: 1em;
+  font: 500 2em 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+article div > p {
+  text-align: center;
+  font: 300 1.2em 'Open Sans', sans-serif;
+  padding-inline: 1em;
+}
+
+/* ------------------------- carta de vinhos ------------------------- */
+
+main > section:nth-of-type(4) > article > div {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-main>section:nth-of-type(3)>div:first-of-type>div>article:first-of-type {
-    background: url('./images/carreDeCordeiro.jpg');
-    background-size: 100%;
-}
-
-main>section:nth-of-type(3)>div:first-of-type>div>article:nth-of-type(2) {
-    background: url('./images/carneAssada.jpg');
-    background-size: 100%;
-
-}
-
-main>section:nth-of-type(3)>div:first-of-type>div>article:last-of-type {
-    background: url('./images/saladaSendoTemperada.jpg');
-    background-size: 100%;
-}
-
-main>section:nth-of-type(3)>div:first-of-type>div>article {
-    background-position: center;
-    flex: 1;
-}
-
-main>section:nth-of-type(3)>div:first-of-type>article {
-    flex: 2;
-    background: url('./images/freshSalad.jpg');
-    background-position: center;
+main > section:nth-of-type(4) > article:first-child {
+    background: url('./images/vinhos/vinho1.jpg');
     background-size: cover;
-}
-
-main>section:nth-of-type(3)>div:last-of-type {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-main>section:nth-of-type(3)>div:last-of-type>article {
-    flex: 1;
-    background: url('./images/tigelaDeSalada.jpg');
     background-position: center;
-    background-size: 100%;
 }
 
-article>div {
-    height: 100%;
-    color: transparent;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    transition: .3s ease-in-out;
+main > section:nth-of-type(4) > article:nth-child(2) {
+    background: url('./images/vinhos/vinho2.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-article:hover>div {
-    color: #ddd;
-    backdrop-filter: brightness(.3);
-    -webkit-backdrop-filter: brightness(.3);
+main > section:nth-of-type(4) > article:nth-child(3){
+    background: url('./images/vinhos/vinho3.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-article div>h3 {
-    padding-top: 2em;
-    padding-inline: 1em;
-    font: 500 2em 'Open Sans', sans-serif;
-    text-align: center;
+main > section:nth-of-type(4) > article:last-child {
+    background: url('./images/vinhos/vinho4.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-article div>p {
-    text-align: center;
-    font: 300 1.2em 'Open Sans', sans-serif;
-    padding-inline: 1em;
+main > section:nth-of-type(4) > article {
+    flex: 1;
 }
+
+/* ----------------------------- footer ----------------------------- */
 
 footer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20vh;
-    gap: 2EM;
-    height: 30vh;
-    background: #000;
-    position: relative;
-    color: #ddd;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
+  margin-top: 20vh;
+  gap: 2em;
+  height: 30vh;
+  background: #000;
+  position: relative;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
+
 footer > h3 {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 footer > ul {
-    list-style: none;
+  list-style: none;
 }
 
 footer > ul > li {
-    text-align: center;
+  text-align: center;
 }
 
 footer > ul > li > a {
-    text-decoration: none;
-    color: #ddd;
+  text-decoration: none;
 }
 
 footer > p {
-    position: absolute;
-    bottom: 0;
-    margin: 2em;
+  position: absolute;
+  bottom: 0;
+  margin: 2em;
 }
